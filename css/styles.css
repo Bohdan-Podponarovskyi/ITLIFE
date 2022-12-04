@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    transition: all .1s ease-in;
 }
 
 html {
@@ -67,6 +68,10 @@ a {
     color: #3C3C3C;
 }
 
+.nav__link:hover {
+    color: #18B5DC;
+}
+
 .button__callback {
     font-weight: 600;
     font-size: 18px;
@@ -75,6 +80,12 @@ a {
     color: #3C3C3C;
     border: 1px solid #3C3C3C;
     padding: 10px 20px;
+}
+
+.button__callback:hover {
+    background: #18B5DC;
+    border: 1px solid #18B5DC;
+    color: #FFFFFF;
 }
 
 .about-us {
@@ -138,6 +149,7 @@ a {
 }
 
 .footer {
+    box-sizing: border-box;
     margin-top: auto;
     display: flex;
     flex-direction: column;
@@ -145,6 +157,7 @@ a {
     justify-content: center;
     gap: 20px;
     padding: 40px 0;
+    max-height: 260px;
 }
 
 .footer__nav-link {
@@ -161,6 +174,7 @@ a {
 }
 
 .social-networks__list-item {
+    color: #18B5DC;
     border: 1px solid #18B5DC;
     font-size: 18px;
     line-height: 22px;
@@ -175,4 +189,50 @@ a {
     justify-content: center;
     align-items: center;
     padding: 11px 10px;
+}
+
+.social-network__icon_footer {
+    color: #18B5DC;
+}
+
+.social-networks__list-item:hover .social-network__link {
+    background: #18B5DC;
+}
+
+.social-networks__list-item:hover .social-network__icon_footer {
+    color: white;
+}
+
+.img-wrapper {
+    position: relative;
+}
+
+.social-networks__list_photo-hover {
+    position: absolute;
+    inset: 0;
+    background: #18B5DC;
+}
+
+.social-networks__list-item_photo-hover {
+    background: #5DCBE6;
+}
+
+.social-network__icon_photo-hover {
+    color: #FFFFFF;
+}
+
+.social-networks__list-item_photo-hover:hover > .social-network__link {
+    background: #FFFFFF;
+}
+
+.social-networks__list-item_photo-hover:hover .social-network__icon_photo-hover {
+    color: #18B5DC;
+}
+
+.img-wrapper > .social-networks__list_photo-hover {
+    display: none;
+}
+
+.img-wrapper:hover > .social-networks__list_photo-hover {
+    display: flex;
 }

@@ -95,6 +95,7 @@ a {
     justify-content: center;
     align-items: center;
     gap: 60px;
+    flex: 1;
     border-top: 1px solid #BDBDBD;
     background: #F6F6F6;
     padding: 150px 0;
